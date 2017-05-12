@@ -1,0 +1,12 @@
+C:\Users\Gerrit\Downloads\SimpleHttpServer-2013-03-23\SimpleHttpServer\bin\Release\SoundControllServer.exe
+C:\Users\Gerrit\Downloads\SimpleHttpServer-2013-03-23\SimpleHttpServer\bin\Release\SoundControllServer.pdb
+C:\Users\Gerrit\Downloads\SimpleHttpServer-2013-03-23\SimpleHttpServer\obj\x86\Release\SimpleHttpServer.csprojResolveAssemblyReference.cache
+C:\Users\Gerrit\Downloads\SimpleHttpServer-2013-03-23\SimpleHttpServer\obj\x86\Release\SoundControllServer.exe
+C:\Users\Gerrit\Downloads\SimpleHttpServer-2013-03-23\SimpleHttpServer\obj\x86\Release\SoundControllServer.pdb
+C:\Users\Gerrit\OneDrive\Programmieren\SimpleHttpServer\bin\Release\SoundControllServer.exe
+C:\Users\Gerrit\OneDrive\Programmieren\SimpleHttpServer\bin\Release\SoundControllServer.pdb
+C:\Users\Gerrit\OneDrive\Programmieren\SimpleHttpServer\obj\x86\Release\SimpleHttpServer.csprojResolveAssemblyReference.cache
+C:\Users\Gerrit\OneDrive\Programmieren\SimpleHttpServer\obj\x86\Release\SoundControllServer.exe
+C:\Users\Gerrit\OneDrive\Programmieren\SimpleHttpServer\obj\x86\Release\SoundControllServer.pdb
+C:\Users\Gerrit\OneDrive\Programmieren\SimpleHttpServer\obj\x86\Release\SoundControllServer.Properties.Resources.resources
+C:\Users\Gerrit\OneDrive\Programmieren\SimpleHttpServer\obj\x86\Release\SimpleHttpServer.csproj.GenerateResource.Cache

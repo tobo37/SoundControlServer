@@ -1,0 +1,7 @@
+C:\Users\Gerrit\OneDrive\Programmieren\SimpleHttpServer\bin\Export\SoundControllServer.exe
+C:\Users\Gerrit\OneDrive\Programmieren\SimpleHttpServer\bin\Export\SoundControllServer.pdb
+C:\Users\Gerrit\OneDrive\Programmieren\SimpleHttpServer\obj\Export\SoundControllServer.Properties.Resources.resources
+C:\Users\Gerrit\OneDrive\Programmieren\SimpleHttpServer\obj\Export\SimpleHttpServer.csproj.GenerateResource.Cache
+C:\Users\Gerrit\OneDrive\Programmieren\SimpleHttpServer\obj\Export\SoundControllServer.exe
+C:\Users\Gerrit\OneDrive\Programmieren\SimpleHttpServer\obj\Export\SoundControllServer.pdb
+C:\Users\Gerrit\OneDrive\Programmieren\SimpleHttpServer\obj\Export\SimpleHttpServer.csprojResolveAssemblyReference.cache
