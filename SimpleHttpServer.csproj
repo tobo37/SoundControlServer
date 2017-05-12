@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4FA45FB4-1B9B-4D5D-A2DF-A8169E6EA43D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SoundControllServer</RootNamespace>
+    <AssemblyName>SoundControllServer</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Export|x86'">
+    <OutputPath>bin\x86\Export\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Export|AnyCPU'">
+    <OutputPath>bin\Export\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AudioManager.cs" />
+    <Compile Include="broadcaster.cs" />
+    <Compile Include="DeviceObj.cs" />
+    <Compile Include="Device\ApplicationModel\IApplication.cs" />
+    <Compile Include="Device\ApplicationModel\IStartupService.cs" />
+    <Compile Include="Device\ApplicationModel\SaveSettingsService.cs" />
+    <Compile Include="Device\ApplicationModel\SingleInstanceStartupService.cs" />
+    <Compile Include="Device\ApplicationModel\StartupServiceAttribute.cs" />
+    <Compile Include="Device\Audio\AudioDevice.cs" />
+    <Compile Include="Device\Audio\AudioDeviceCollection.cs" />
+    <Compile Include="Device\Audio\AudioDeviceEventArgs.cs" />
+    <Compile Include="Device\Audio\AudioDeviceKind.cs" />
+    <Compile Include="Device\Audio\AudioDeviceManager.cs" />
+    <Compile Include="Device\Audio\AudioDeviceRemovedEventArgs.cs" />
+    <Compile Include="Device\Audio\AudioDeviceRole.cs" />
+    <Compile Include="Device\Audio\AudioDeviceState.cs" />
+    <Compile Include="Device\Audio\AudioDeviceStateEventArgs.cs" />
+    <Compile Include="Device\Audio\DefaultAudioDeviceEventArgs.cs" />
+    <Compile Include="Device\Audio\InputSwitcherService.cs" />
+    <Compile Include="Device\Audio\Interop\MMAudio\Blob.cs" />
+    <Compile Include="Device\Audio\Interop\MMAudio\ClsCtx.cs" />
+    <Compile Include="Device\Audio\Interop\MMAudio\IMMDevice.cs" />
+    <Compile Include="Device\Audio\Interop\MMAudio\IMMDeviceCollection.cs" />
+    <Compile Include="Device\Audio\Interop\MMAudio\IMMDeviceEnumerator.cs" />
+    <Compile Include="Device\Audio\Interop\MMAudio\IMMEndpoint.cs" />
+    <Compile Include="Device\Audio\Interop\MMAudio\IMMNotificationClient.cs" />
+    <Compile Include="Device\Audio\Interop\MMAudio\IPolicyConfig2.cs" />
+    <Compile Include="Device\Audio\Interop\MMAudio\IPolicyConfig3.cs" />
+    <Compile Include="Device\Audio\Interop\MMAudio\IPropertyStore.cs" />
+    <Compile Include="Device\Audio\Interop\MMAudio\MMDeviceEnumerator.cs" />
+    <Compile Include="Device\Audio\Interop\MMAudio\PolicyConfig.cs" />
+    <Compile Include="Device\Audio\Interop\MMAudio\PropertyKey.cs" />
+    <Compile Include="Device\Audio\Interop\MMAudio\PropertyKeys.cs" />
+    <Compile Include="Device\Audio\Interop\MMAudio\PropertyStore.cs" />
+    <Compile Include="Device\Audio\Interop\MMAudio\PropertyStoreProperty.cs" />
+    <Compile Include="Device\Audio\Interop\MMAudio\PropVariant.cs" />
+    <Compile Include="Device\Audio\Interop\MMAudio\StorageAccessMode.cs" />
+    <Compile Include="Device\ComponentModel\ILifetime.cs" />
+    <Compile Include="Device\ComponentModel\ILifetime`2.cs" />
+    <Compile Include="Device\ComponentModel\IPriorityMetadata.cs" />
+    <Compile Include="Device\ComponentModel\Lifetime.cs" />
+    <Compile Include="Device\ComponentModel\ObservableObject.cs" />
+    <Compile Include="Device\Interop\ExternalDll.cs" />
+    <Compile Include="Device\Interop\HResult.cs" />
+    <Compile Include="Device\Win32\InteropServices\Win32Marshal.cs" />
+    <Compile Include="Device\Win32\RegistryKeyExtensions.cs" />
+    <Compile Include="IconObject.cs" />
+    <Compile Include="MasterObject.cs" />
+    <Compile Include="program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs" />
+    <Compile Include="SendObject.cs" />
+    <Compile Include="SimpleHttpServer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoundObject.cs" />
+    <Compile Include="Speaker.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings" />
+    <None Include="Resources\Icon1.ico" />
+    <Content Include="Icon1.ico" />
+    <Content Include="Resources\Symbolbild.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
