@@ -1,4 +1,4 @@
-# SoundControlServer
+# SoundControlServer (old)
 Server for an App to controll the Sound and Speakers on a Windows PC
 
 Thanks & Licences
